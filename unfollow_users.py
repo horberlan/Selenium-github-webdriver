@@ -22,13 +22,13 @@ time.sleep(1)
 login_form.click()
 time.sleep(1)
 
-prepend = ["horberlan"]
+prepend = ["user_name"]
 
 
 for user in prepend:
     for i in range(0, 200):
         for t in range(1, 100):
-            string = "https://github.com/horberlan?tab=following"
+            string = (f"https://github.com/{user_name}?tab=following")
             driver.get(string)
             time.sleep(1)
 
